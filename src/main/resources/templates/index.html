@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1 id="hello">HelloWorld</h1>
+<div>
+
+    <br/>
+    <form method="get" th:action="@{http://localhost:8080/admin}">
+        <button type="submit">Показать список пользователей</button>
+    </form>
+    <br/>
+    <form method="get" th:action="@{http://localhost:8080/user}">
+        <button type="submit">Показать страницу пользователя</button>
+    </form>
+</div>
+</body>
+</html>
